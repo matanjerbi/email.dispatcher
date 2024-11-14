@@ -8,3 +8,5 @@ def dispatch_email():
     for i in range(0, 300):
         is_dangerous = i % 3 == 0
         requests.post(DB_URL, json=generate_message(is_dangerous))
+
+
